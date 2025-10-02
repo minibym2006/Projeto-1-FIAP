@@ -1,27 +1,18 @@
-# 🌱 Projeto 2 – Coleta de Dados e Irrigação Inteligente
+## Circuito no Wokwi
+![Circuito completo](imgs/wokwi_circuit.png)
 
-## 📌 Descrição
-Este projeto da **FarmTech Solutions** simula um sistema de irrigação inteligente utilizando ESP32 na plataforma [Wokwi](https://wokwi.com).  
-O sistema coleta dados de **NPK**, **pH do solo** (via LDR) e **umidade** (via DHT22), decidindo automaticamente quando ligar a irrigação.
+### Botões NPK
+![Botões NPK](imgs/btns_npk.png)
 
----
+### LDR (pH simulado)
+![Sensor LDR](imgs/ldr_ph.png)
 
-## 🔧 Componentes no Wokwi
-- ESP32 DevKit V1  
-- 3 Botões (N, P, K)  
-- LDR (pH)  
-- DHT22 (umidade)  
-- Relé (bomba d’água)
+### DHT22 (umidade do solo)
+![Sensor DHT22](imgs/dht22.png)
 
----
+### Relé (bomba d’água)
+![Relé Bomba](imgs/rele.png)
 
-## ⚙️ Lógica de Decisão
-- **Umidade < 60%**  
-- **NPK presentes (botões pressionados)**  
-- **pH entre 6 e 7 (ideal para soja)**  
+### Monitor Serial em funcionamento
+![Serial Monitor](imgs/serial.png)
 
-➡️ Se todas as condições forem atendidas, a **bomba de irrigação (relé)** é ativada.
-
----
-
-## 📂 Estrutura do Projeto
